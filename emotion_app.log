@@ -1,0 +1,268 @@
+2025-02-20 22:37:23,380 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:37:23,386 - INFO - Model and labels loaded successfully.
+2025-02-20 22:37:40,251 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:37:40,271 - INFO - Model and labels loaded successfully.
+2025-02-20 22:37:44,225 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:37:44,250 - INFO - Model and labels loaded successfully.
+2025-02-20 22:37:45,841 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:37:45,863 - INFO - Model and labels loaded successfully.
+2025-02-20 22:37:46,771 - INFO - Track audio received
+2025-02-20 22:37:46,772 - INFO - Add a track <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x00000236B1C25110> of kind audio to <aiortc.rtcpeerconnection.RTCPeerConnection object at 0x000002369456DDD0>
+2025-02-20 22:37:46,773 - INFO - Track video received
+2025-02-20 22:37:46,774 - INFO - Set <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x00000236BE07DC10> as an input video track with video_processor <class 'streamlit_webrtc.process.AsyncVideoProcessTrack'>
+2025-02-20 22:37:46,774 - INFO - Add a track <streamlit_webrtc.process.AsyncVideoProcessTrack object at 0x00000236BE07F010> of kind video to <aiortc.rtcpeerconnection.RTCPeerConnection object at 0x000002369456DDD0>
+2025-02-20 22:37:46,964 - INFO - Connection(0) Could not bind to 169.254.230.158 - [WinError 10049] The requested address is not valid in its context
+2025-02-20 22:37:47,042 - INFO - Connection(0) Could not bind to 169.254.10.151 - [WinError 10049] The requested address is not valid in its context
+2025-02-20 22:37:50,719 - INFO - Connection(0) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53863) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:50,719 - INFO - Connection(0) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53864) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:50,719 - INFO - Connection(0) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53863) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:50,719 - INFO - Connection(0) Check CandidatePair(('192.168.91.76', 53865) -> ('192.168.91.76', 51700)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:50,721 - INFO - ICE connection state is checking
+2025-02-20 22:37:50,722 - INFO - Connection(0) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53863) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:51,609 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:37:51,636 - INFO - Model and labels loaded successfully.
+2025-02-20 22:37:52,686 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:37:52,714 - INFO - Model and labels loaded successfully.
+2025-02-20 22:37:55,741 - INFO - ICE connection state is closed
+2025-02-20 22:37:55,741 - INFO - Connection(0) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53864) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:55,747 - INFO - Track audio received
+2025-02-20 22:37:55,748 - INFO - Add a track <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x00000236BE0EBD10> of kind audio to <aiortc.rtcpeerconnection.RTCPeerConnection object at 0x00000236B1808550>
+2025-02-20 22:37:55,748 - INFO - Track video received
+2025-02-20 22:37:55,748 - INFO - Set <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x00000236BE1304D0> as an input video track with video_processor <class 'streamlit_webrtc.process.AsyncVideoProcessTrack'>
+2025-02-20 22:37:55,749 - INFO - Add a track <streamlit_webrtc.process.AsyncVideoProcessTrack object at 0x0000023681EE4750> of kind video to <aiortc.rtcpeerconnection.RTCPeerConnection object at 0x00000236B1808550>
+2025-02-20 22:37:55,764 - INFO - Connection(2) Could not bind to 169.254.230.158 - [WinError 10049] The requested address is not valid in its context
+2025-02-20 22:37:55,764 - INFO - Connection(2) Could not bind to 169.254.10.151 - [WinError 10049] The requested address is not valid in its context
+2025-02-20 22:37:55,767 - INFO - Connection(0) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53863) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:55,770 - INFO - Connection(0) Check CandidatePair(('192.168.91.76', 53865) -> ('192.168.91.76', 51700)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:55,787 - INFO - Connection(0) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53864) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.FROZEN -> State.IN_PROGRESS
+2025-02-20 22:37:56,255 - ERROR - Exception in callback Transaction.__retry()
+handle: <TimerHandle when=890754.453 Transaction.__retry()>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1200, in sendto
+    self._sock.sendto(data, addr)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'sendto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\stun.py", line 312, in __retry
+    self.__protocol.send_stun(self.__request, self.__addr)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 266, in send_stun
+    self.transport.sendto(bytes(message), addr)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1210, in sendto
+    self._fatal_error(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 877, in _fatal_error
+    self._loop.call_exception_handler({
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+2025-02-20 22:37:56,768 - ERROR - Exception in callback Transaction.__retry()
+handle: <TimerHandle when=890754.953 Transaction.__retry()>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1200, in sendto
+    self._sock.sendto(data, addr)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'sendto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\stun.py", line 312, in __retry
+    self.__protocol.send_stun(self.__request, self.__addr)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 266, in send_stun
+    self.transport.sendto(bytes(message), addr)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1210, in sendto
+    self._fatal_error(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 877, in _fatal_error
+    self._loop.call_exception_handler({
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+2025-02-20 22:37:58,583 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53214) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:58,583 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53215) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:58,583 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53214) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:58,583 - INFO - Connection(2) Check CandidatePair(('192.168.91.76', 53216) -> ('192.168.91.76', 51700)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:58,585 - INFO - ICE connection state is checking
+2025-02-20 22:37:58,585 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53214) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:59,241 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53214) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:37:59,761 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53215) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:59,788 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53214) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:59,791 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53215) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:37:59,792 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53215) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.FROZEN -> State.WAITING
+2025-02-20 22:37:59,794 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 53214) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:37:59,812 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53215) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:59,815 - INFO - Connection(2) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 53215) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:37:59,842 - INFO - Connection(2) Check CandidatePair(('192.168.91.76', 53216) -> ('192.168.91.76', 51700)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:37:59,846 - INFO - Connection(2) Check CandidatePair(('192.168.91.76', 53216) -> ('192.168.91.76', 51700)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:00,065 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:00,088 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:00,822 - INFO - ICE connection state is closed
+2025-02-20 22:38:01,103 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:01,123 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:01,300 - INFO - Track audio received
+2025-02-20 22:38:01,304 - INFO - Add a track <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x00000236B1334510> of kind audio to <aiortc.rtcpeerconnection.RTCPeerConnection object at 0x00000236BE17BD50>
+2025-02-20 22:38:01,305 - INFO - Track video received
+2025-02-20 22:38:01,307 - INFO - Set <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x00000236BE1CE6D0> as an input video track with video_processor <class 'streamlit_webrtc.process.AsyncVideoProcessTrack'>
+2025-02-20 22:38:01,307 - INFO - Add a track <streamlit_webrtc.process.AsyncVideoProcessTrack object at 0x00000236BE1CEE50> of kind video to <aiortc.rtcpeerconnection.RTCPeerConnection object at 0x00000236BE17BD50>
+2025-02-20 22:38:01,323 - INFO - Connection(4) Could not bind to 169.254.230.158 - [WinError 10049] The requested address is not valid in its context
+2025-02-20 22:38:01,324 - INFO - Connection(4) Could not bind to 169.254.10.151 - [WinError 10049] The requested address is not valid in its context
+2025-02-20 22:38:01,512 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:01,525 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:02,456 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 65128) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:02,456 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 65129) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:02,457 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 65128) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:02,457 - INFO - Connection(4) Check CandidatePair(('192.168.91.76', 65130) -> ('192.168.91.76', 51700)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:03,064 - INFO - ICE connection state is checking
+2025-02-20 22:38:03,064 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 65128) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:03,073 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 65129) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:03,074 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 65128) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:03,076 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 65129) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 51701)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:03,076 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 65129) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:03,098 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 65128) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:03,104 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 65128) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:03,129 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 65129) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:03,135 - INFO - Connection(4) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 65129) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 51702)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:03,169 - INFO - Connection(4) Check CandidatePair(('192.168.91.76', 65130) -> ('192.168.91.76', 51700)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:03,184 - INFO - Connection(4) Check CandidatePair(('192.168.91.76', 65130) -> ('192.168.91.76', 51700)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:33,537 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:33,559 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:34,080 - INFO - ICE connection state is closed
+2025-02-20 22:38:34,950 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:34,951 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:34,959 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:35,269 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:50,266 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:50,286 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:51,585 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:51,612 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:51,826 - INFO - Track audio received
+2025-02-20 22:38:51,826 - INFO - Add a track <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x00000236BE25DDD0> of kind audio to <aiortc.rtcpeerconnection.RTCPeerConnection object at 0x00000236BE238490>
+2025-02-20 22:38:51,826 - INFO - Track video received
+2025-02-20 22:38:51,826 - INFO - Set <aiortc.rtcrtpreceiver.RemoteStreamTrack object at 0x00000236BE263090> as an input video track with video_processor <class 'streamlit_webrtc.process.AsyncVideoProcessTrack'>
+2025-02-20 22:38:51,827 - INFO - Add a track <streamlit_webrtc.process.AsyncVideoProcessTrack object at 0x00000236BE262AD0> of kind video to <aiortc.rtcpeerconnection.RTCPeerConnection object at 0x00000236BE238490>
+2025-02-20 22:38:51,842 - INFO - Connection(6) Could not bind to 169.254.230.158 - [WinError 10049] The requested address is not valid in its context
+2025-02-20 22:38:51,843 - INFO - Connection(6) Could not bind to 169.254.10.151 - [WinError 10049] The requested address is not valid in its context
+2025-02-20 22:38:53,950 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 57939) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 61747)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:53,950 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 57940) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 61747)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:53,951 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 57939) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 61748)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:53,951 - INFO - Connection(6) Check CandidatePair(('192.168.91.76', 57941) -> ('192.168.91.76', 61746)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:53,953 - INFO - ICE connection state is checking
+2025-02-20 22:38:53,954 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 57939) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 61747)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:54,573 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 57940) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 61747)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:54,575 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 57939) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 61747)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:54,596 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 57940) -> ('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 61747)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:54,596 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 57940) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 61748)) State.FROZEN -> State.WAITING
+2025-02-20 22:38:54,598 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 57939) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 61748)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:54,600 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:3704:b9e2:8ecc:2a42', 57939) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 61748)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:54,617 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 57940) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 61748)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:54,618 - INFO - Connection(6) Check CandidatePair(('2401:4900:6287:c011:bdd8:2587:c9:7f26', 57940) -> ('2401:4900:6287:c011:bdd8:2587:c9:7f26', 61748)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:54,656 - INFO - Connection(6) Check CandidatePair(('192.168.91.76', 57941) -> ('192.168.91.76', 61746)) State.WAITING -> State.IN_PROGRESS
+2025-02-20 22:38:54,658 - INFO - Connection(6) Check CandidatePair(('192.168.91.76', 57941) -> ('192.168.91.76', 61746)) State.IN_PROGRESS -> State.SUCCEEDED
+2025-02-20 22:38:54,829 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:54,850 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:55,585 - INFO - ICE connection state is closed
+2025-02-20 22:38:55,873 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-20 22:38:55,895 - INFO - Model and labels loaded successfully.
+2025-02-20 22:38:56,180 - ERROR - Exception in callback WebRtcWorker._process_offer_thread_impl.<locals>.callback(<Task cancell...webrtc.py:73>>) at C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\streamlit_webrtc\webrtc.py:543
+handle: <Handle WebRtcWorker._process_offer_thread_impl.<locals>.callback(<Task cancell...webrtc.py:73>>) at C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\streamlit_webrtc\webrtc.py:543>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\streamlit_webrtc\webrtc.py", line 544, in callback
+    e = done_task.exception()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\streamlit_webrtc\webrtc.py", line 237, in _process_offer_coro
+    await pc.setRemoteDescription(offer)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aiortc\rtcpeerconnection.py", line 987, in setRemoteDescription
+    await asyncio.gather(*coros)
+asyncio.exceptions.CancelledError
+2025-02-20 22:39:06,447 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-248' coro=<Connection.check_start() done, defined at C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py:788> exception=AttributeError("'NoneType' object has no attribute 'call_exception_handler'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1200, in sendto
+    self._sock.sendto(data, addr)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'sendto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 797, in check_start
+    response, addr = await pair.protocol.request(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 254, in request
+    return await transaction.run()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\stun.py", line 301, in run
+    self.__retry()
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\stun.py", line 312, in __retry
+    self.__protocol.send_stun(self.__request, self.__addr)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 266, in send_stun
+    self.transport.sendto(bytes(message), addr)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1210, in sendto
+    self._fatal_error(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 877, in _fatal_error
+    self._loop.call_exception_handler({
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+2025-02-20 22:39:06,450 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-234' coro=<Connection.check_start() done, defined at C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py:788> exception=AttributeError("'NoneType' object has no attribute 'call_exception_handler'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1200, in sendto
+    self._sock.sendto(data, addr)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'sendto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 797, in check_start
+    response, addr = await pair.protocol.request(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 254, in request
+    return await transaction.run()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\stun.py", line 301, in run
+    self.__retry()
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\stun.py", line 312, in __retry
+    self.__protocol.send_stun(self.__request, self.__addr)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 266, in send_stun
+    self.transport.sendto(bytes(message), addr)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1210, in sendto
+    self._fatal_error(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 877, in _fatal_error
+    self._loop.call_exception_handler({
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+2025-02-20 22:39:06,451 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-227' coro=<Connection.check_start() done, defined at C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py:788> exception=AttributeError("'NoneType' object has no attribute 'call_exception_handler'")>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1200, in sendto
+    self._sock.sendto(data, addr)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'sendto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 797, in check_start
+    response, addr = await pair.protocol.request(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 254, in request
+    return await transaction.run()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\stun.py", line 301, in run
+    self.__retry()
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\stun.py", line 312, in __retry
+    self.__protocol.send_stun(self.__request, self.__addr)
+  File "C:\Users\sasid\Downloads\Music recommender\myenv\Lib\site-packages\aioice\ice.py", line 266, in send_stun
+    self.transport.sendto(bytes(message), addr)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 1210, in sendto
+    self._fatal_error(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\selector_events.py", line 877, in _fatal_error
+    self._loop.call_exception_handler({
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
