@@ -36,7 +36,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 2rem auto;
             padding: 0 20px;
         }
@@ -113,7 +113,7 @@
             box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
             transition: all 0.3s ease;
             text-transform: uppercase;
-            margin-top: 10px;
+            margin: 10px 5px;
         }
 
         .btn-primary:hover {
@@ -123,6 +123,13 @@
 
         .btn-primary:active {
             transform: translateY(1px);
+        }
+
+        .btn-primary:disabled {
+            background: #4a4a4a;
+            transform: none;
+            box-shadow: none;
+            cursor: not-allowed;
         }
 
         .footer {
@@ -174,6 +181,142 @@
             animation: pulse 1.5s infinite;
         }
 
+        .language-container {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .form-select {
+            background-color: rgba(31, 41, 55, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-primary);
+            border-radius: 50px;
+            padding: 12px 20px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .form-select:focus {
+            background-color: rgba(31, 41, 55, 0.8);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+            color: var(--text-primary);
+        }
+
+        .songs-container {
+            display: none;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .songs-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .emotion-language-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 600;
+        }
+
+        .song-card {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .song-card:hover {
+            transform: translateY(-3px);
+            background: rgba(108, 99, 255, 0.2);
+            border-color: rgba(108, 99, 255, 0.3);
+        }
+
+        .song-thumbnail {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .song-info {
+            flex: 1;
+        }
+
+        .song-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .song-channel {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .play-button {
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(16, 185, 129, 0.2);
+            border-radius: 50%;
+            color: var(--accent-color);
+            transition: all 0.2s ease;
+        }
+
+        .song-card:hover .play-button {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .youtube-player {
+            display: none;
+            margin-top: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--accent-color);
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -197,18 +340,57 @@
     <div class="container">
         <div class="card">
             <h1>Real-Time Emotion Detection</h1>
+
+            <div class="language-container">
+                <label for="language-select" class="mb-2">Select Your Preferred Music Language</label>
+                <select id="language-select" class="form-select">
+                    <option value="" selected disabled>Choose a language</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="German">German</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Portuguese">Portuguese</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Chinese">Chinese</option>
+                </select>
+            </div>
+
             <div class="video-container">
                 <video id="video" autoplay></video>
                 <canvas id="canvas-output"></canvas>
             </div>
 
-            <button class="btn btn-primary" onclick="startDetection()">
-                <i class="fas fa-play-circle me-2"></i>Start Detection
-            </button>
+            <div class="btn-container">
+                <button id="start-detection" class="btn btn-primary" onclick="startDetection()" disabled>
+                    <i class="fas fa-play-circle me-2"></i>Start Detection
+                </button>
+
+                <button id="recommend-songs" class="btn btn-primary" onclick="recommendSongs()" disabled>
+                    <i class="fas fa-music me-2"></i>Recommend Songs
+                </button>
+            </div>
 
             <div id="status" class="status">
                 <div class="status-icon"></div>
-                <span id="status-text">Ready to detect</span>
+                <span id="status-text">Select a language to begin</span>
+            </div>
+
+            <div id="songs-container" class="songs-container">
+                <h2 class="songs-title">Recommended Songs for Your Mood</h2>
+                <div id="emotion-language-title" class="emotion-language-title"></div>
+                <div id="songs-list"></div>
+
+                <div id="youtube-player" class="youtube-player">
+                    <iframe id="youtube-iframe" width="100%" height="315" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
 
             <div class="footer">
@@ -217,6 +399,7 @@
                     <div class="tech-badge">Flask</div>
                     <div class="tech-badge">MediaPipe</div>
                     <div class="tech-badge">Keras</div>
+                    <div class="tech-badge">YouTube API</div>
                 </div>
             </div>
         </div>
@@ -233,16 +416,38 @@
         const ctx = canvasOutput.getContext('2d');
         const statusText = document.getElementById('status-text');
         const statusElement = document.getElementById('status');
+        const languageSelect = document.getElementById('language-select');
+        const startDetectionBtn = document.getElementById('start-detection');
+        const recommendSongsBtn = document.getElementById('recommend-songs');
+        const songsContainer = document.getElementById('songs-container');
+        const songsList = document.getElementById('songs-list');
+        const youtubePlayer = document.getElementById('youtube-player');
+        const youtubeIframe = document.getElementById('youtube-iframe');
+        const emotionLanguageTitle = document.getElementById('emotion-language-title');
         const socket = io();
+
         let isDetectionRunning = false;
         let currentEmotion = "None";
         let lastEmotionChange = Date.now();
+        let selectedLanguage = "";
+        let videoStream = null;
+        let animationFrameId = null;
+
+        // Enable start button when language is selected
+        languageSelect.addEventListener('change', function () {
+            selectedLanguage = this.value;
+            if (selectedLanguage) {
+                startDetectionBtn.disabled = false;
+                statusText.textContent = "Ready to detect";
+            }
+        });
 
         // Access the webcam
         function startDetection() {
-            if (!isDetectionRunning) {
+            if (!isDetectionRunning && selectedLanguage) {
                 navigator.mediaDevices.getUserMedia({ video: true })
                     .then(stream => {
+                        videoStream = stream;
                         video.srcObject = stream;
                         video.play();
 
@@ -255,6 +460,7 @@
                         isDetectionRunning = true;
                         statusElement.classList.add('active');
                         statusText.textContent = "Detection active";
+                        recommendSongsBtn.disabled = false;
                         captureFrames();
                         // Start drawing on canvas
                         drawOnCanvas();
@@ -266,12 +472,37 @@
             }
         }
 
+        // Stop the webcam and detection
+        function stopDetection() {
+            if (isDetectionRunning && videoStream) {
+                // Stop all tracks in the stream
+                videoStream.getTracks().forEach(track => track.stop());
+
+                // Stop the canvas animation
+                if (animationFrameId) {
+                    cancelAnimationFrame(animationFrameId);
+                    animationFrameId = null;
+                }
+
+                // Clear the canvas
+                ctx.clearRect(0, 0, canvasOutput.width, canvasOutput.height);
+
+                isDetectionRunning = false;
+                statusElement.classList.remove('active');
+                statusText.textContent = "Detection stopped";
+
+                // Don't disable the recommend button as we want to keep using the last detected emotion
+            }
+        }
+
         // Capture frames and send to server
         function captureFrames() {
             const canvas = document.createElement('canvas');
             const context = canvas.getContext('2d');
 
             setInterval(() => {
+                if (!isDetectionRunning) return; // Stop sending frames if detection is stopped
+
                 canvas.width = video.videoWidth;
                 canvas.height = video.videoHeight;
                 context.drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -313,7 +544,89 @@
                 ctx.fillText(currentEmotion, canvasOutput.width / 2, 40);
             }
 
-            requestAnimationFrame(drawOnCanvas);
+            // Continue animation only if detection is running
+            if (isDetectionRunning) {
+                animationFrameId = requestAnimationFrame(drawOnCanvas);
+            }
+        }
+
+        // Request song recommendations based on detected emotion
+        function recommendSongs() {
+            if (currentEmotion === "None") {
+                statusText.textContent = "Please wait for emotion detection";
+                return;
+            }
+
+            // Stop the detection when recommending songs
+            stopDetection();
+
+            // Show loading state
+            songsList.innerHTML = '<div class="text-center mt-4 mb-4"><div class="loading"></div> Loading recommendations...</div>';
+            songsContainer.style.display = "block";
+
+            // Update the emotion-language title
+            emotionLanguageTitle.textContent = `${currentEmotion} music in ${selectedLanguage}`;
+
+            // Scroll to songs container
+            songsContainer.scrollIntoView({ behavior: 'smooth' });
+
+            // Make API request to get songs
+            fetch('/get_songs', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    emotion: currentEmotion,
+                    language: selectedLanguage
+                }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        songsList.innerHTML = `<div class="alert alert-danger">Error: ${data.error}</div>`;
+                        return;
+                    }
+
+                    if (!data.songs || data.songs.length === 0) {
+                        songsList.innerHTML = '<div class="alert alert-warning">No songs found for this mood. Try again or try a different language.</div>';
+                        return;
+                    }
+
+                    // Display songs
+                    songsList.innerHTML = '';
+                    data.songs.forEach(song => {
+                        const songCard = document.createElement('div');
+                        songCard.className = 'song-card';
+                        songCard.innerHTML = `
+                        <img src="${song.thumbnail}" alt="Thumbnail" class="song-thumbnail">
+                        <div class="song-info">
+                            <div class="song-title">${song.title}</div>
+                            <div class="song-channel">${song.channelTitle}</div>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    `;
+
+                        songCard.addEventListener('click', () => {
+                            playSong(song.id);
+                        });
+
+                        songsList.appendChild(songCard);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    songsList.innerHTML = '<div class="alert alert-danger">Error fetching recommendations. Please try again.</div>';
+                });
+        }
+
+        // Play selected song in YouTube player
+        function playSong(videoId) {
+            youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            youtubePlayer.style.display = 'block';
+            youtubePlayer.scrollIntoView({ behavior: 'smooth' });
         }
 
         // Receive emotion from server

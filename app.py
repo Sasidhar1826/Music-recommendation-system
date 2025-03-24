@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 from flask_socketio import SocketIO
 import cv2
 import numpy as np
@@ -8,6 +8,9 @@ import logging
 import os
 import base64
 import time
+import requests
+import random
+import json
 
 # Configure logging
 logging.getLogger('tensorflow').setLevel(logging.ERROR)
@@ -17,6 +20,9 @@ logging.getLogger('mediapipe').setLevel(logging.ERROR)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
 socketio = SocketIO(app)
+
+# YouTube API configuration
+YOUTUBE_API_KEY = "AIzaSyDn1dwJbafjgk-Lo3V9LkABJcskrnm97uA"  # Replace with your actual API key
 
 # Check for required files
 required_files = {
@@ -47,9 +53,83 @@ hands = mp.solutions.hands
 last_frame_time = 0
 frame_interval = 0.1  # Process frames every 0.1 seconds (10 FPS)
 
+# Emotion to search query mapping
+emotion_playlists = {
+    "happy": ["happy music", "upbeat songs", "feel good playlist", "joyful tunes", "positive vibes"],
+    "sad": ["sad songs", "melancholy music", "heartbreak playlist", "emotional ballads", "sad vibes"],
+    "angry": ["angry music", "rage playlist", "heavy metal", "aggressive songs", "fury tracks"],
+    "surprise": ["surprising music", "unexpected songs", "musical plot twists", "dramatic scores", "shocking tracks"],
+    "fear": ["scary music", "suspense tracks", "horror soundtrack", "tense music", "thriller scores"],
+    "disgust": ["intense music", "dark tracks", "unsettling songs", "disturbing scores", "uncomfortable tunes"],
+    "neutral": ["relaxing music", "calm playlist", "background tunes", "ambient sounds", "chillout tracks"]
+}
+
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/get_songs', methods=['POST'])
+def get_recommended_songs():
+    data = request.get_json()
+    emotion = data.get('emotion', 'neutral')
+    language = data.get('language', 'English')
+    
+    # Normalize emotion to match our dictionary keys
+    emotion = emotion.lower()
+    if emotion not in emotion_playlists:
+        emotion = "neutral"
+    
+    # Get a random search query for the detected emotion
+    search_query = random.choice(emotion_playlists[emotion])
+    
+    # Add language to search query if specified
+    if language and language.lower() != "english":
+        search_query += f" {language}"
+    
+    try:
+        # Call YouTube API to search for videos
+        search_url = "https://www.googleapis.com/youtube/v3/search"
+        search_params = {
+            'part': 'snippet',
+            'q': search_query,
+            'type': 'video',
+            'videoCategoryId': '10',  # Music category
+            'maxResults': 50,  # Get more results to randomize from
+            'key': YOUTUBE_API_KEY
+        }
+        
+        response = requests.get(search_url, params=search_params)
+        search_data = response.json()
+        
+        # Randomly select 5 songs from results
+        all_songs = search_data.get('items', [])
+        recommended_songs = []
+        
+        if all_songs:
+            # Select 5 random songs or all if less than 5
+            random_selections = random.sample(all_songs, min(5, len(all_songs)))
+            
+            for item in random_selections:
+                if 'id' in item and 'videoId' in item['id']:
+                    song = {
+                        'id': item['id']['videoId'],
+                        'title': item['snippet']['title'],
+                        'thumbnail': item['snippet']['thumbnails']['medium']['url'],
+                        'channelTitle': item['snippet']['channelTitle']
+                    }
+                    recommended_songs.append(song)
+        
+        return jsonify({
+            'emotion': emotion,
+            'songs': recommended_songs
+        })
+    
+    except Exception as e:
+        print(f"YouTube API Error: {str(e)}")
+        return jsonify({
+            'error': 'Failed to fetch songs',
+            'message': str(e)
+        }), 500
 
 @socketio.on('frame')
 def handle_frame(data):
@@ -105,4 +185,4 @@ def handle_frame(data):
         socketio.emit('emotion', {'error': 'Processing error occurred'})
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app, debug=True)   
