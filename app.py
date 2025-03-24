@@ -22,7 +22,7 @@ app.config['SECRET_KEY'] = 'your_secret_key'
 socketio = SocketIO(app)
 
 # YouTube API configuration
-YOUTUBE_API_KEY = "AIzaSyDn1dwJbafjgk-Lo3V9LkABJcskrnm97uA"  # Replace with your actual API key
+YOUTUBE_API_KEY = "Your-API-key"  # Replace with your actual API key
 
 # Check for required files
 required_files = {
